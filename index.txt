@@ -1,4 +1,4 @@
-Samuel Olanrewaju - Front End Developer
+Samuel Olanrewaju - Front-End Developer
 
 This is a personal portfolio made by & for certifieddev
 
@@ -22,11 +22,11 @@ Contact
 #---------- HERO ----------#
 
 Samuel Olanrewaju
-Creative Web & App Developer
+Transformative Front-End Developer
 
 alt = Samuel Olanrewaju
 
-Hi, I’m Samuel Olanrewaju and I am creative web & app developer who dream making the world better place by creating captivating products.
+Hi, I’m Samuel Olanrewaju and I am Transformative Front-End Developer who dream making the world better place by creating captivating products.
 
 Download CV
 <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
