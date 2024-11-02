@@ -2,6 +2,9 @@
 
 
 
+// event listener for multiple element
+
+
 // * PRELOADER
 
 const preloader = document.querySelector("[data-preloader]");

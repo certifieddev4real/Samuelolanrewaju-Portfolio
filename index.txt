@@ -6,7 +6,7 @@ This is a personal portfolio made by & for certifieddev
 
 #---------- HEADER ----------#
 
-alt = portfolio home
+alt = Certified home
 
 aria-label = Toggle menu
 
