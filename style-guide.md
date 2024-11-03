@@ -4,28 +4,37 @@
 
 Google font
 
-``` html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 Ionicon
 
-``` html
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+```html
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
 ```
 
 ---
 
 ## Colors
 
-``` css
---raisin-black: hsla(231, 10%, 14%, 1);
---roman-silver: hsla(229, 10%, 57%, 1);
---eerie-black: hsla(228, 9%, 10%, 1);
---black: hsla(0, 0%, 0%, 1);
+```css
+--raisin-black: hsla(220, 16%, 18%, 1);
+--roman-silver: hsla(219, 14%, 40%, 1);
+--eerie-black: hsla(221, 10%, 12%, 1);
+--black: hsla(220, 20%, 5%, 1);
 --white: hsla(0, 0%, 100%, 1);
 --white_a10: hsla(0, 0%, 100%, 0.1);
 --white_a5: hsla(0, 0%, 100%, 0.05);
@@ -33,8 +42,8 @@ Ionicon
 
 ## Typography
 
-``` css
---ff-syne: 'Syne', sans-serif;
+```css
+--ff-syne: "Syne", sans-serif;
 
 --fs-1: 4.8rem;
 --fs-2: 4.5rem;
@@ -51,13 +60,13 @@ Ionicon
 
 ## Spacing
 
-``` css
+```css
 --section-padding: 100px;
 ```
 
 ## Border Radius
 
-``` css
+```css
 --radius-pill: 100px;
 --radius-circle: 50%;
 --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
@@ -65,7 +74,7 @@ Ionicon
 
 ## Transition
 
-``` css
+```css
 --transition-1: 0.25s ease;
 --transition-2: 0.5s ease;
 --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
