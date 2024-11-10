@@ -22,52 +22,74 @@ Contact
 #---------- HERO ----------#
 
 Samuel Olanrewaju
-Transformative Front-End Developer
+Certified Developer
 
 alt = Samuel Olanrewaju
 
-Hi, I’m Samuel Olanrewaju and I am Transformative Front-End Developer who dream making the world better place by creating captivating products.
+Konnichiwa👋🏾, I'm Samuel, a front-end developer and an anime otaku who's all about crafting solutions that blow your mind 💥 and speaking bad Japanese (Hai!, Totemo warui😎). My mission? To get you the results that make you think, “Why didn't I work with this good-looking guy sooner?!” 🤯 Because, seriously, who wouldn't? 😏.
 
-Download CV
+Download Resume
 <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
 
 
 
 #---------- SERVICE ----------#
 
-Services That I Provide
+What I Do & How I Do It.
 
 Services
 
-Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare.
+Ready for a deep dive into digital magic? Trust me – these services are where the magic (and mischief) happens. 🌌🤫
 
 <ion-icon name="desktop-outline"></ion-icon>
-Website Design
+<ion-icon name="phone-portrait-outline"></ion-icon>
+<ion-icon name="laptop-outline"></ion-icon>
+Size Matters: Adaptable Sites
 
-Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.
+Crafted to adapt, no matter the screen size. Your website, made beautiful and functional, wherever it’s viewed. 📱💻
 
 01
 
 aria-label = More about my website design service
 
-<ion-icon name="podium-outline"></ion-icon>
-SEO Marketing
+<ion-icon name="rocket-outline"></ion-icon>
+<ion-icon name="stats-chart-outline"></ion-icon>
+Visibility Vibes: SEO-Boosted Pages
+
+Built with SEO secrets, bringing visibility and results. Rise above the noise and get seen – organically. 🚀📈
+
 02
 
-<ion-icon name="basket-outline"></ion-icon>
-eCommerce
+<ion-icon name="construct-outline"></ion-icon>
+<ion-icon name="settings-outline"></ion-icon>
+Control Freak: Your Custom CMS
+
+Your site, your rules. Easy updates, total control, with customization that truly feels like you. 🔧✨
+
 03
 
-<ion-icon name="color-filter-outline"></ion-icon>
-Graphic Design
+<ion-icon name="speedometer-outline"></ion-icon>
+<ion-icon name="shield-checkmark-outline"></ion-icon>
+Front-End Maintenance & Optimization
+
+Fast, secure, optimized to the max. Like a digital tune-up that keeps things running, without the hassle. 🔥🔍
+
 04
 
-<ion-icon name="megaphone-outline"></ion-icon>
-Digital Marketing
+<ion-icon name="color-palette-outline"></ion-icon>
+<ion-icon name="sparkles-outline"></ion-icon>
+Interactive UI & Animations
+
+Sites with soul. Scrolls, clicks, hovers – crafted to captivate, engage, and delight, every step of the way. ✨🎨
+
 05
 
-<ion-icon name="chatbubbles-outline"></ion-icon>
-Social Media
+<ion-icon name="moon-outline"></ion-icon>
+<ion-icon name="accessibility-outline"></ion-icon>
+Shades On: Dark Mode & Accessibility
+
+Elegant accessibility with a dash of mystery. Dark mode included, because we all need a bit of style. 🌑💫.
+
 06
 
 aria-label = Slide to previous item
@@ -77,33 +99,40 @@ aria-label = Slide to next item
 
 #---------- SKILLS ----------#
 
-I Make The Future
+I script the future - Ko-dingu jutsu no goku-i wo kiwame-te 🐱‍👤.
 
-I Develop & Create Digital Future.
+Creating Tomorrow’s Online Playground Today.
 
 Pellentesque magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi senectus dictum.
 
 Web design magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi tristique senectus the neuse malesuada nullam ac lorem miss the duru.
 
-info@kwilliams.com
+certifieddeveloper6@gmail.com
 
-Design
-90%
+Web Dev</>.
+84%
 
-Branding
-80%
+Tailwind CSS
+75%
 
-Web Design
-95%
-
-Social Media
+JS
 85%
 
+Wordpress
+90%
 
+React JS
+59%
+
+Vue JS
+18%
+
+Node JS
+7%
 
 #---------- PORTFOLIO ----------#
 
-Our Works
+Samuel San's Works
 
 Portfolio
 
@@ -111,23 +140,23 @@ Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana
 
 alt = portfolio
 
-Lab. 001
-Website Design
+Alexander Fisayo
+Portfolio Website Dev.
 
-Aer Agency
-Website / Development
+Kitchenware.com
+E-commerce Website Dev.
 
-Joker Card
-UX Design / Web App
+Taiwo Oladejo
+Portfolio Website Dev.
 
-Peaky Blinders
-Website / UX Design
+B.T.G(Bridge The Gap)
+Web App / UI Design
 
-Design Zoom
-Branding / Design
+F.T.L(For The Love)
+PASS / Cloud Service / Dev. 
 
-Out Zone
-UX Design / Web App
+L.O.T.T(Living Out Thy Thoughts)
+AR/ Dev./ Web App
 
 
 

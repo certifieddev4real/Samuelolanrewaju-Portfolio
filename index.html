@@ -1,96 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- primary meta tags -->
     <title>Samuel Olanrewaju - Front-End Developer</title>
-    <meta name="title" content="Samuel Olanrewaju - Front-End Developer">
-    <meta name="description" content="This is a personal portfolio made by & for certifieddev">
+    <meta name="title" content="Samuel Olanrewaju - Front-End Developer" />
+    <meta
+      name="description"
+      content="This is a personal portfolio made by & for certifieddev"
+    />
 
     <!-- favicon -->
-     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-     <!-- google font link -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-     <!-- custom css link -->
-      <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-      <!-- preload images -->
-       <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-</head>
+    <!-- preload images -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  </head>
 
-<body>
-
+  <body>
     <!-- #PRELOADER -->
 
     <div class="preloader" data-preloader>
-        <div class="circle"></div>
+      <div class="circle"></div>
     </div>
 
-
-
     <!-- #HEADER -->
-     <header class="header" data-header>
-        <div class="container">
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="90"
+            height="40"
+            alt="Certified home"
+          />
+        </a>
 
-            <a href="#" class="logo">
-                <img src="./assets/images/logo.svg" width="170" height="40" alt="Certified home">
-            </a>
+        <button
+          class="nav-toggle-btn"
+          data-nav-toggler
+          data-nav-toggle-btn
+          aria-label="Toggle menu"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
 
-            <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label = "Toggle menu">
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-            </button>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
 
-            <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Resume</a>
+            </li>
 
-                    <li>
-                        <a href="#" class="navbar-link">Home</a>
-                    </li>
+            <li>
+              <a href="#" class="navbar-link">Services</a>
+            </li>
 
-                    <li>
-                        <a href="#" class="navbar-link">Resume</a>
-                    </li>
+            <li>
+              <a href="#" class="navbar-link">Portfolio</a>
+            </li>
 
-                    <li>
-                        <a href="#" class="navbar-link">Services</a>
-                    </li>
+            <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li>
 
-                    <li>
-                        <a href="#" class="navbar-link">Portfolio</a>
-                    </li>
+            <li>
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-                    <li>
-                        <a href="#" class="navbar-link">Blog</a>
-                    </li>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
 
-                    <li>
-                        <a href="#" class="navbar-link">Contact</a>
-                    </li>
+    <main>
+      <article>
+        <!-- #HERO -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Samuel Olanrewaju</h1>
+
+              <p class="hero-subtitle">Certified Developer</p>
+
+              <div class="hero-banner">
+                <img
+                  src="./assets/images/hero-banner-MML.png"
+                  width="800"
+                  height="800"
+                  alt="Samuel Olanrewaju"
+                  class="w-100"
+                />
+              </div>
+
+              <p class="section-text">
+                Konnichiwa👋🏾, I'm Samuel, a front-end developer and an anime otaku who's all about crafting solutions that blow your mind 💥 and speaking bad Japanese (Hai!, Totemo warui😎). My mission? To get you the results that make you think, “Why didn't I work with this good-looking guy sooner?!” 🤯 Because, seriously, who wouldn't? 😏.
+              </p>
+
+              <a href="#" class="btn has-before">
+                <span class="span">Download Resume</span>
+
+                <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- #SERVICE -->
+
+        <section class="service" aria-labelledby="service-label">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <p class="section-subtitle">What I Do & How I Do It.</p>
+                <h2 class="h2 section-title" id="service-label">Services</h2>
+              </div>
+
+              <p class="section-text">
+                Ready for a deep dive into digital magic? Trust me - these
+                services are where the magic (and mischief) happens. 🌌🤫
+              </p>
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-container service-list" data-slider-container>
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="desktop-outline"></ion-icon>
+                      <ion-icon name="phone-portrait-outline"></ion-icon>
+                      <ion-icon name="laptop-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Size Matters: Adaptable Sites</h3>
+
+                    <p class="card-text">
+                      Crafted to adapt, no matter the screen size. Your website,
+                      made beautiful and functional, wherever it's viewed. 📱💻
+                    </p>
+
+                    <span class="text-lg card-number">01</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="rocket-outline"></ion-icon>
+                      <ion-icon name="stats-chart-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Visibility Vibes: SEO-Boosted Pages
+                    </h3>
+
+                    <p class="card-text">
+                      Built with SEO secrets, bringing visibility and results.
+                      Rise above the noise and get seen - organically. 🚀📈
+                    </p>
+
+                    <span class="text-lg card-number">02</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my SEO service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="construct-outline"></ion-icon>
+                      <ion-icon name="settings-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Control Freak: Your Custom CMS
+                    </h3>
+
+                    <p class="card-text">
+                      Your site, your rules. Easy updates, total control, with
+                      customization that truly feels like you. 🔧✨
+                    </p>
+
+                    <span class="text-lg card-number">03</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my CMS(Wordpress, Wix, and the likes) integration service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+                      <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Front-End Maintenance & Optimization
+                    </h3>
+
+                    <p class="card-text">
+                      Fast, secure, optimized to the max. Like a digital tune-up
+                      that keeps things running, without the hassle. 🔥🔍
+                    </p>
+
+                    <span class="text-lg card-number">04</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my Maintenance & Optimization service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="color-palette-outline"></ion-icon>
+                      <ion-icon name="sparkles-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Interactive UI & Animations</h3>
+
+                    <p class="card-text">
+                      Sites with soul. Scrolls, clicks, hovers - crafted to
+                      captivate, engage, and delight, every step of the way.
+                      ✨🎨
+                    </p>
+
+                    <span class="text-lg card-number">05</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my Interactive UI & Animations service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="moon-outline"></ion-icon>
+                      <ion-icon name="accessibility-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Shades On: Dark Mode & Accessibility
+                    </h3>
+
+                    <p class="card-text">
+                      Elegant accessibility with a dash of mystery. Dark mode
+                      included, because we all need a bit of style. 🌑💫.
+                    </p>
+
+                    <span class="text-lg card-number">06</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my Dark Mode & Accessibility service"
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="slider-controls">
+                <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                    <div class="line"></div>
+                    <div class="arrow"></div>
+                </button>
+
+                <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                    <div class="line"></div>
+                    <div class="arrow"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- #SKILLS -->
+
+        <section class="section skills" aria-label="our skills">
+          <div class="container">
+
+            <p class="section-subtitle">I script the future - Ko-dingu jutsu no goku-i wo kiwame-te 🐱‍👤.(See what i mean😥, Bad Japanese 🤦🏾‍♂️)</p>
+
+            <h2 class="h2 section-title">Creating Tomorrow's Online Playground Today.</h2>
+
+            <div class="skills-wrapper">
+
+              <div>
+                <p class="section-text">
+                  Pellentesque magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi senectus dictum.
+                </p>
+
+                <p class="section-text">
+                  Web design magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi tristique senectus the neuse malesuada nullam ac lorem miss the duru.
+                </p>
+
+                <a href="#" class="btn has-before">certifieddeveloper6@gmail.com</a>
+              </div>
+
+              <div>
+
+                <ul class="skills-list">
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Web Dev.</p>
+
+                      <data value="84" class="progress-value">84%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 84%;"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Tailwind CSS</p>
+
+                      <data value="75" class="progress-value">75%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 75%;"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">JS</p>
+
+                      <data value="85" class="progress-value">85%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 85%;"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Wordpress</p>
+
+                      <data value="90" class="progress-value">90%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 90%;"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">React JS</p>
+
+                      <data value="59" class="progress-value">59%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 59%;"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Node JS</p>
+
+                      <data value="7" class="progress-value">7%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 7%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Vue JS</p>
+
+                      <data value="18" class="progress-value">18%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 18%;"></div>
+                    </div>
+                  </li>
+
                 </ul>
-            </nav>
 
-            <div class="overlay" data-nav-toggler data-overlay></div>
+              </div>
 
-        </div>
-     </header>
+            </div>
 
+          </div>
+        </section>
 
+        <!-- #PORTFOLIO -->
 
+        <section class="portfolio" aria-labelledby="portfolio-label">
+          <div class="container">
 
+            <div class="title-wrapper">
+
+              <div>
+                <p class="section-subtitle" id="portfolio-label">Samuel San's Works 👨🏾‍💻</p>
+
+                <h2 class="h2 section-title">Portfolio(The Japanese translation)</h2>
+              </div>
+
+              <p class="section-text">
+                Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare.
+              </p>
+
+            </div>
+
+            <div class="slider" data-slider>
+
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+
+                    <img src="./assets/images/portfolio-1.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Alexander Fisayo</h3>
+
+                      <p class="card-text">Portfolio Website Dev.</p>
+                    </div>
+
+                    <a href="#" class="layer-link"></a>
+
+                  </div>
+                </li>
+
+                <li class="slider-item">
+                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+
+                    <img src="./assets/images/portfolio-2.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Kitchenware.com</h3>
+
+                      <p class="card-text">E-commerce Website Dev.</p>
+                    </div>
+
+                    <a href="#" class="layer-link"></a>
+
+                  </div>
+                </li>
+
+                <li class="slider-item">
+                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+
+                    <img src="./assets/images/portfolio-3.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">Taiwo Oladejo</h3>
+
+                      <p class="card-text">Portfolio Website Dev.</p>
+                    </div>
+
+                    <a href="#" class="layer-link"></a>
+
+                  </div>
+                </li>
+
+                <li class="slider-item">
+                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+
+                    <img src="./assets/images/portfolio-4.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">B.T.G(Bridge The Gap)</h3>
+
+                      <p class="card-text">Web App / UI Design</p>
+                    </div>
+
+                    <a href="#" class="layer-link"></a>
+
+                  </div>
+                </li>
+
+                <li class="slider-item">
+                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+
+                    <img src="./assets/images/portfolio-5.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">F.T.L(For The Love)</h3>
+
+                      <p class="card-text">PASS / Cloud Service / Dev.</p>
+                    </div>
+
+                    <a href="#" class="layer-link"></a>
+
+                  </div>
+                </li>
+
+                <li class="slider-item">
+                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+
+                    <img src="./assets/images/portfolio-6.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+
+                    <div class="card-content">
+                      <h3 class="h3 card-title">
+                        L.O.T.T(Living Out Thy Thoughts)</h3>
+
+                      <p class="card-text">AR/ Dev./ Web App</p>
+                    </div>
+
+                    <a href="#" class="layer-link"></a>
+
+                  </div>
+                </li>
+
+              </ul>
+
+              <div class="slider-controls">
+                <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                    <div class="line"></div>
+                    <div class="arrow"></div>
+                </button>
+
+                <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                    <div class="line"></div>
+                    <div class="arrow"></div>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- #BLOG -->
+
+        <section class="section blog" aria-labelledby>
+          <div class="container">
+
+            <p class="section-subtitle" id="blog-label">Recent Articles</p>
+
+          </div>
+        </section>
+
+      </article>
+    </main>
 
     <!-- custom js link -->
-     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-     <!-- ionicon link -->
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <!-- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
