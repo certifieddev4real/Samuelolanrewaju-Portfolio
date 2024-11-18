@@ -134,9 +134,9 @@ Node JS
 
 Samuel San's Works
 
-Portfolio
+Portfolio(Tenji)
 
-Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare.
+Step into my digital dojo—where ideas go from 0 to unreal, fueled by code and creativity. Ready to unlock what's brewing behind the screen? Come get a glimpse into what's cooking!
 
 alt = portfolio
 
@@ -166,12 +166,12 @@ Recent Articles
 
 Latest News
 
-alt = Get Started With Tiktok Ads.
+alt = Project B.T.G; The Journey So far.
 
-24
-June 2022
+11
+Healing 2024
 
-Get Started With Tiktok Ads.
+Project B.T.G; The Journey so far...
 
 Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt ornare.
 
@@ -179,22 +179,23 @@ Read more
 
 <ion-icon name="arrow-forward"></ion-icon>
 
-alt = UX in Ecommerce – 5 things to avoid.
+alt = Just Give up - It's not for everybody(The Dev. IP Syndrome).
 
-27
-June 2022
+16
+Healing 2024
 
-UX in Ecommerce – 5 things to avoid.
+Just Give up - It's not for everybody(The Dev. IP Syndrome).
 
 
 
 #---------- FOOTER ----------#
 
 Get in touch
-info@kwilliams.com
+certifieddeveloper6@gmail.com
+@certifieddev
 
-Locations
-San Francisco — California
+Location
+Ogbomoso - Nigeria
 
 <ion-icon name="logo-dribbble"></ion-icon>
 <ion-icon name="logo-instagram"></ion-icon>
