@@ -78,7 +78,7 @@ img,
 span,
 data,
 button,
-ion-icon {
+i {
   display: block;
 }
 
@@ -98,7 +98,7 @@ button {
   cursor: pointer;
 }
 
-ion-icon {
+i {
   pointer-events: none;
 }
 
@@ -571,14 +571,14 @@ body.nav-active {
   transition: var(--transition-2);
 }
 
-.service-card .card-icon ion-icon {
+.service-card .card-icon i {
   display: inline-flex;
   color: var(--content-color, var(--raisin-black));
   font-size: 6rem;
   --ionic-stroke-width: 15px;
 }
 
-.service-card .card-icon ion-icon:nth-child(1) {
+.service-card .card-icon i:nth-child(1) {
   font-size: 5.5rem;
 }
 
@@ -755,8 +755,8 @@ body.nav-active {
 \*-----------------------------------*/
 
 /**
-   * for screens > 575px 
-   */
+ * responsive for large than 575px screen
+ */
 
 @media (min-width: 575px) {
   /**
@@ -792,8 +792,8 @@ body.nav-active {
 }
 
 /**
-   * for screens > 768px 
-   */
+ * responsive for large than 768px screen
+ */
 
 @media (min-width: 768px) {
   /**
@@ -802,8 +802,8 @@ body.nav-active {
 
   :root {
     /**
-   * typography
-   */
+     * typography
+     */
 
     --fs-2: 6rem;
     --fs-3: 5.5rem;
@@ -813,229 +813,210 @@ body.nav-active {
    * REUSED STYLE
    */
 
-   .container {
+  .container {
     max-width: 720px;
-   }
+  }
 
-   .title-wrapper {
+  .title-wrapper {
     display: flex;
     gap: 10%;
-   }
+  }
 
-   .title-wrapper .section-title {
+  .title-wrapper .section-title {
     margin-block-end: 0;
-   }
+  }
 
-   .title-wrapper .section-text {
+  .title-wrapper .section-text {
     margin-block-start: 40px;
-   }
+  }
 
-
-
-   /**
+  /**
    * HERO
    */
 
-   .hero .container {
+  .hero .container {
     position: relative;
-   }
+  }
 
-   .hero-banner {
+  .hero-banner {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     width: 55%;
     z-index: -1;
-   }
+  }
 
-   .hero-content {
+  .hero-content {
     width: 50%;
     margin-inline-start: auto;
     padding-block: 10%;
-   }
+  }
 
-   .hero-title,
-   .hero-subtitle {
+  .hero-title,
+  .hero-subtitle {
     text-shadow: 2px 2px 0 var(--eerie-black);
-   }
+  }
 
-   /**
+  /**
    * SKILL
    */
 
-   .skills-wrapper {
+  .skills-wrapper {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     gap: 40px;
-   }
+  }
 
-   .skills .btn {
+  .skills .btn {
     margin-block-end: 0;
-   }
+  }
 
-   /**
+  /**
    * BLOG
    */
 
-   .blog-card .card-title {
+  .blog-card .card-title {
     --fs-4: 2.7rem;
-   }
+  }
 
-   /**
+  /**
    * FOOTER
    */
 
-   .footer .container {
+  .footer .container {
     grid-template-columns: repeat(3, 1fr);
-   }
-
+  }
 }
 
 /**
-   * for screens > 992px 
-   */
+ * responsive for large than 992px screen
+ */
 
-   @media (min-width: 992px) {
-    /**
+@media (min-width: 992px) {
+  /**
    * CUSTOM PROPERTY
    */
 
-   :root {
+  :root {
     /**
-   * typography
-   */
+     * typography
+     */
 
     --fs-3: 7rem;
   }
-
-
 
   /**
    * REUSED STYLE
    */
 
-   .container {
+  .container {
     max-width: 960px;
-   }
+  }
 
-   .title-wrapper {
+  .title-wrapper {
     gap: 15%;
-   }
+  }
 
-   .slider {
+  .slider {
     --slider-items: 3;
-   }
+  }
 
-
-
-   /**
+  /**
    * HERO
    */
 
-   .hero-subtitle {
+  .hero-subtitle {
     --fs-8: 1.4rem;
-   }
+  }
 
-
-
-   /**
+  /**
    * SKILL
    */
 
-   .skills .section-subtitle {
+  .skills .section-title {
     max-width: 16ch;
-   }
+  }
 
-   .skills-wrapper {
+  .skills-wrapper {
     gap: 10%;
-   }
+  }
 
-   /**
+  /**
    * BLOG
    */
 
-   .blog-card {
+  .blog-card {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-   }
+  }
 
-   .blog-card .card-content {
+  .blog-card .card-content {
     padding: 32px;
-   }
+  }
 
-   .blog-list li:nth-child(2n) .card-banner {
+  .blog-list li:nth-child(2n) .card-banner {
     order: 1;
-   }
+  }
+}
 
-   }
+/**
+ * responsive for large than 1200px screen
+ */
 
-   /**
-   * for screens > 1200px 
+@media (min-width: 1200px) {
+  /**
+   * CUSTOM PROPERTY
    */
 
-   @media (min-width: 1200px) {
-
+  :root {
     /**
-   * CUSTOM PROPERTY 
+     * spacing
+     */
+
+    --section-padding: 140px;
+  }
+
+  /**
+   * REUSED STYLE
    */
 
-    :root {
-
-      /**
-   * spacing 
-   */
-
-   --section-padding: 140px;
-
-    }
-
-
-
-    /**
-   * REUSED STYLE 
-   */
-
-   .container {
+  .container {
     max-width: 1140px;
-   }
+  }
 
-
-
-   /**
+  /**
    * HEADER
    */
 
-   .navbar {
+  .navbar {
     top: 0;
     display: grid;
     place-content: center;
-   }
+  }
 
-   .nav-toggle-btn {
+  .nav-toggle-btn {
     position: relative;
     z-index: 2;
-   }
+  }
 
-   .overlay {
+  .overlay {
     top: 0;
-   }
+  }
 
-
-
-   /**
-   * HERO 
+  /**
+   * HERO
    */
 
-   .hero-content {
+  .hero-content {
     width: 55%;
-   }
+  }
 
-   .hero-title {
+  .hero-title {
     word-break: normal;
-   }
+  }
 
-   .hero .section-text {
+  .hero .section-text {
     margin-block-end: 52px;
-   }
-   }
+  }
+}

@@ -41,56 +41,67 @@ Services
 
 Ready for a deep dive into digital magic? Trust me – these services are where the magic (and mischief) happens. 🌌🤫
 
-<ion-icon name="desktop-outline"></ion-icon>
-<ion-icon name="phone-portrait-outline"></ion-icon>
-<ion-icon name="laptop-outline"></ion-icon>
+<i class='bx bx-link-alt'></i>
+<i class='bx bx-briefcase'></i>
+<i class='bx bx-globe'></i>
+The Missing Link
+
+Tailored portfolios designed to transform your online presence. Perfect for freelancers and businesses who need to showcase their value. Let's get yours live today! 🌐🔗
+
+01
+
+aria-label="More about my portfolio development service"
+
+<i class='bx bx-desktop'></i>
+<i class='bx bx-devices'></i>
+<i class='bx bx-laptop'></i>
 Size Matters: Adaptable Sites
 
 Crafted to adapt, no matter the screen size. Your website, made beautiful and functional, wherever it’s viewed. 📱💻
 
-01
+02
 
 aria-label = More about my website design service
 
-<ion-icon name="rocket-outline"></ion-icon>
-<ion-icon name="stats-chart-outline"></ion-icon>
+<i class='bx bx-rocket'></i>
+<i class='bx bx-bar-chart-alt-2'></i>
 Visibility Vibes: SEO-Boosted Pages
 
 Built with SEO secrets, bringing visibility and results. Rise above the noise and get seen – organically. 🚀📈
 
-02
+03
 
-<ion-icon name="construct-outline"></ion-icon>
-<ion-icon name="settings-outline"></ion-icon>
+<i class='bx bx-hard-hat'></i>
+<i class='bx bx-cog'></i>
 Control Freak: Your Custom CMS
 
 Your site, your rules. Easy updates, total control, with customization that truly feels like you. 🔧✨
 
-03
+04
 
-<ion-icon name="speedometer-outline"></ion-icon>
-<ion-icon name="shield-checkmark-outline"></ion-icon>
+<i class='bx bx-tachometer'></i>
+<i class='bx bx-check-shield'></i>
 Front-End Maintenance & Optimization
 
 Fast, secure, optimized to the max. Like a digital tune-up that keeps things running, without the hassle. 🔥🔍
 
-04
+05
 
-<ion-icon name="color-palette-outline"></ion-icon>
-<ion-icon name="sparkles-outline"></ion-icon>
+<i class='bx bx-palette'></i>
+<i class='bx bxs-star-half'></i>
 Interactive UI & Animations
 
 Sites with soul. Scrolls, clicks, hovers – crafted to captivate, engage, and delight, every step of the way. ✨🎨
 
-05
+06
 
-<ion-icon name="moon-outline"></ion-icon>
-<ion-icon name="accessibility-outline"></ion-icon>
+<i class='bx bx-moon'></i>
+<i class='bx bxs-universal-access'></i>
 Shades On: Dark Mode & Accessibility
 
 Elegant accessibility with a dash of mystery. Dark mode included, because we all need a bit of style. 🌑💫.
 
-06
+07
 
 aria-label = Slide to previous item
 aria-label = Slide to next item
@@ -103,11 +114,13 @@ I script the future - Ko-dingu jutsu no goku-i wo kiwame-te 🐱‍👤.
 
 Creating Tomorrow’s Online Playground Today.
 
-Pellentesque magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi senectus dictum.
+Here lies an array of jutsu—honed through dedication and experience—showcasing my digital expertise and passion for crafting extraordinary online solutions, each skill a testament to my journey in mastering the art of innovation.
 
-Web design magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi tristique senectus the neuse malesuada nullam ac lorem miss the duru.
+Where creativity and strategy collide, building web solutions that inspire, engage, and elevate your brand.
 
-certifieddeveloper6@gmail.com
+Shoot me a text, will ya? I've been told i'm fun to chat with, find out below..
+
+Hit me Up📱
 
 Web Dev</>.
 84%
@@ -173,7 +186,7 @@ Healing 2024
 
 Project B.T.G; The Journey so far...
 
-Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt ornare.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum nobis aperiam. Deleniti quae laboriosam hic eaque corrupti! Praesentium, sunt minus incidunt dolores ipsam culpa id quos asperiores vero optio.
 
 Read more
 
@@ -183,6 +196,8 @@ alt = Just Give up - It's not for everybody(The Dev. IP Syndrome).
 
 16
 Healing 2024
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit id similique, a ullam amet deserunt corporis? Maiores corporis quaerat sunt odit hic adipisci neque quae! In asperiores similique unde expedita?
 
 Just Give up - It's not for everybody(The Dev. IP Syndrome).
 
@@ -195,9 +210,12 @@ certifieddeveloper6@gmail.com
 @certifieddev
 
 Location
+https://maps.app.goo.gl/ZSB2rdn1Xnrr526f6
 Ogbomoso - Nigeria
 
-<ion-icon name="logo-dribbble"></ion-icon>
-<ion-icon name="logo-instagram"></ion-icon>
-<ion-icon name="logo-skype"></ion-icon>
-<ion-icon name="logo-linkedin"></ion-icon>
+<i class='bx bxl-dribbble' style='color:#ffffff'></i>
+<i class='bx bxl-github' style='color:#ffffff' ></i>
+<i class='bx bxl-instagram' style='color:#ffffff' ></i>
+<i class='bx bxl-linkedin' style='color:#ffffff' ></i>
+<i class='bx bxl-twitter' style='color:#ffffff' ></i>
+

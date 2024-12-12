@@ -31,6 +31,9 @@
 
     <!-- preload images -->
     <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+
+    <!-- scroll reveal -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
   </head>
 
   <body>
@@ -43,7 +46,7 @@
     <!-- #HEADER -->
     <header class="header" data-header>
       <div class="container">
-        <a href="#" class="logo">
+        <a href="/" class="logo">
           <img
             src="./assets/images/logo.svg"
             width="90"
@@ -65,27 +68,31 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li>
-              <a href="#" class="navbar-link">Home</a>
+              <a href="#home" class="navbar-link">Home</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Resume</a>
+              <a href="#resume" class="navbar-link">Resume</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Services</a>
+              <a href="#service" class="navbar-link">Services</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Portfolio</a>
+              <a href="#skills" class="navbar-link">Skills</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Blog</a>
+              <a href="#portfolio" class="navbar-link">Portfolio</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Contact</a>
+              <a href="#blog" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#footer" class="navbar-link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -98,7 +105,7 @@
       <article>
         <!-- #HERO -->
 
-        <section class="section hero" aria-label="home">
+        <section id="home" class="section hero" aria-label="home">
           <div class="container">
             <div class="hero-content">
               <h1 class="h1 hero-title">Samuel Olanrewaju</h1>
@@ -115,14 +122,23 @@
                 />
               </div>
 
-              <p class="section-text">
-                Konnichiwa👋🏾, I'm Samuel, a front-end developer and an anime otaku who's all about crafting solutions that blow your mind 💥 and speaking bad Japanese (Hai!, Totemo warui😎). My mission? To get you the results that make you think, “Why didn't I work with this good-looking guy sooner?!” 🤯 Because, seriously, who wouldn't? 😏.
+              <p id="resume" class="section-text">
+                Konnichiwa👋🏾, I'm Samuel, a front-end developer and an anime
+                otaku who's all about crafting solutions that blow your mind 💥
+                and speaking bad Japanese (Hai!, Totemo warui😎). My mission? To
+                get you the results that make you think, “Why didn't I work with
+                this good-looking guy sooner?!” 🤯 Because, seriously, who
+                wouldn't? 😏.
               </p>
 
-              <a href="#" class="btn has-before">
+              <a
+                download=""
+                href="./assets/Certified's Resume.pdf"
+                class="btn has-before"
+              >
                 <span class="span">Download Resume</span>
 
-                <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+                <i class="bx bx-download"></i>
               </a>
             </div>
           </div>
@@ -130,7 +146,7 @@
 
         <!-- #SERVICE -->
 
-        <section class="service" aria-labelledby="service-label">
+        <section id="service" class="service" aria-labelledby="service-label">
           <div class="container">
             <div class="title-wrapper">
               <div>
@@ -145,13 +161,40 @@
             </div>
 
             <div class="slider" data-slider>
-              <ul class="slider-container service-list" data-slider-container>
+              <ul class="slider-container service-list swiper-wrapper" data-slider-container>
+                <li class="slider-item swiper-slide" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <i class="bx bx-link-alt"></i>
+                      <i class="bx bx-briefcase"></i>
+                      <i class="bx bx-globe"></i>
+                    </div>
+
+                    <h3 class="h3 card-title">The Missing Link</h3>
+
+                    <p class="card-text">
+                      Tailored portfolios designed to transform your online
+                      presence. Perfect for freelancers and businesses who need
+                      to showcase their value. Let's get yours live today! 🌐🔗
+                    </p>
+
+                    <span class="text-lg card-number">01</span>
+
+                    <a
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I%20want%20to%20build%20a%20portfolio!"
+                      class="layer-link"
+                      aria-label="More about my portfolio development service"
+                    ></a>
+                  </div>
+                </li>
+
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
                     <div class="card-icon">
-                      <ion-icon name="desktop-outline"></ion-icon>
-                      <ion-icon name="phone-portrait-outline"></ion-icon>
-                      <ion-icon name="laptop-outline"></ion-icon>
+                      <i class="bx bx-desktop"></i>
+                      <i class="bx bx-devices"></i>
+                      <i class="bx bx-laptop"></i>
                     </div>
 
                     <h3 class="h3 card-title">Size Matters: Adaptable Sites</h3>
@@ -161,10 +204,11 @@
                       made beautiful and functional, wherever it's viewed. 📱💻
                     </p>
 
-                    <span class="text-lg card-number">01</span>
+                    <span class="text-lg card-number">02</span>
 
                     <a
-                      href="#"
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I%20want%20you%20to%20develop/revamp%20a%20website%20for%20my%20business!"
                       class="layer-link"
                       aria-label="More about my website design service"
                     ></a>
@@ -174,8 +218,8 @@
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
                     <div class="card-icon">
-                      <ion-icon name="rocket-outline"></ion-icon>
-                      <ion-icon name="stats-chart-outline"></ion-icon>
+                      <i class="bx bx-rocket"></i>
+                      <i class="bx bx-bar-chart-alt-2"></i>
                     </div>
 
                     <h3 class="h3 card-title">
@@ -187,10 +231,11 @@
                       Rise above the noise and get seen - organically. 🚀📈
                     </p>
 
-                    <span class="text-lg card-number">02</span>
+                    <span class="text-lg card-number">03</span>
 
                     <a
-                      href="#"
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I%20heard%20you%20could%20improve%20my%20bussiness's%20search%20appearance%20rate?"
                       class="layer-link"
                       aria-label="More about my SEO service"
                     ></a>
@@ -200,8 +245,8 @@
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
                     <div class="card-icon">
-                      <ion-icon name="construct-outline"></ion-icon>
-                      <ion-icon name="settings-outline"></ion-icon>
+                      <i class="bx bx-hard-hat"></i>
+                      <i class="bx bx-cog"></i>
                     </div>
 
                     <h3 class="h3 card-title">
@@ -213,10 +258,11 @@
                       customization that truly feels like you. 🔧✨
                     </p>
 
-                    <span class="text-lg card-number">03</span>
+                    <span class="text-lg card-number">04</span>
 
                     <a
-                      href="#"
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20So%20i%20heard%20you%20also%20build%20beautiful%20CMS(content management system)%20websites,%20i%20want%20one%20for%20my%20business%20also!"
                       class="layer-link"
                       aria-label="More about my CMS(Wordpress, Wix, and the likes) integration service"
                     ></a>
@@ -226,8 +272,8 @@
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
                     <div class="card-icon">
-                      <ion-icon name="speedometer-outline"></ion-icon>
-                      <ion-icon name="shield-checkmark-outline"></ion-icon>
+                      <i class="bx bx-tachometer"></i>
+                      <i class="bx bx-check-shield"></i>
                     </div>
 
                     <h3 class="h3 card-title">
@@ -239,10 +285,11 @@
                       that keeps things running, without the hassle. 🔥🔍
                     </p>
 
-                    <span class="text-lg card-number">04</span>
+                    <span class="text-lg card-number">05</span>
 
                     <a
-                      href="#"
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I%20heard%20you%20can%20give%20my%20business's%20website%20a%20sleek%20makeover.%20Can%20you%20help%20me%20make%20it%20look%20more%20modern%20and%20user-friendly?"
                       class="layer-link"
                       aria-label="More about my Maintenance & Optimization service"
                     ></a>
@@ -252,8 +299,8 @@
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
                     <div class="card-icon">
-                      <ion-icon name="color-palette-outline"></ion-icon>
-                      <ion-icon name="sparkles-outline"></ion-icon>
+                      <i class="bx bx-palette"></i>
+                      <i class="bx bxs-star-half"></i>
                     </div>
 
                     <h3 class="h3 card-title">Interactive UI & Animations</h3>
@@ -264,10 +311,11 @@
                       ✨🎨
                     </p>
 
-                    <span class="text-lg card-number">05</span>
+                    <span class="text-lg card-number">06</span>
 
                     <a
-                      href="#"
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I'm%20looking%20to%20enhance%20my%20website's%20user%20experience.%20Can%20you%20help%20me%20add%20some%20interactive%20elements%20and%20animations?"
                       class="layer-link"
                       aria-label="More about my Interactive UI & Animations service"
                     ></a>
@@ -277,8 +325,8 @@
                 <li class="slider-item" data-slider-item>
                   <div class="service-card">
                     <div class="card-icon">
-                      <ion-icon name="moon-outline"></ion-icon>
-                      <ion-icon name="accessibility-outline"></ion-icon>
+                      <i class="bx bx-moon"></i>
+                      <i class="bx bxs-universal-access"></i>
                     </div>
 
                     <h3 class="h3 card-title">
@@ -290,10 +338,11 @@
                       included, because we all need a bit of style. 🌑💫.
                     </p>
 
-                    <span class="text-lg card-number">06</span>
+                    <span class="text-lg card-number">07</span>
 
                     <a
-                      href="#"
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I'm%20interested%20in%20making%20my%20website%20more%20accessible.%20Can%20you%20also%20help%20me%20add%20a%20dark%20mode%20feature?"
                       class="layer-link"
                       aria-label="More about my Dark Mode & Accessibility service"
                     ></a>
@@ -318,31 +367,46 @@
 
         <!-- #SKILLS -->
 
-        <section class="section skills" aria-label="our skills">
+        <section id="skills" class="section skills" aria-label="our skills">
           <div class="container">
+            <p class="section-subtitle">
+              I script the future - Ko-dingu jutsu no goku-i wo kiwame-te
+              🐱‍👤.(See what i mean😥, Bad Japanese 🤦🏾‍♂️)
+            </p>
 
-            <p class="section-subtitle">I script the future - Ko-dingu jutsu no goku-i wo kiwame-te 🐱‍👤.(See what i mean😥, Bad Japanese 🤦🏾‍♂️)</p>
-
-            <h2 class="h2 section-title">Creating Tomorrow's Online Playground Today.</h2>
+            <h2 class="h2 section-title">
+              Creating Tomorrow's Online Playground Today.
+            </h2>
 
             <div class="skills-wrapper">
-
               <div>
                 <p class="section-text">
-                  Pellentesque magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi senectus dictum.
+                  Here lies an array of jutsu—honed through dedication and
+                  experience—showcasing my digital expertise and passion for
+                  crafting extraordinary online solutions, each skill a
+                  testament to my journey in mastering the art of innovation.
                 </p>
 
                 <p class="section-text">
-                  Web design magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi tristique senectus the neuse malesuada nullam ac lorem miss the duru.
+                  Where creativity and strategy collide, building web solutions
+                  that inspire, engage, and elevate your brand.
                 </p>
 
-                <a href="#" class="btn has-before">certifieddeveloper6@gmail.com</a>
+                <p class="section-text">
+                  Shoot me a text, will ya? I've been told i'm fun to chat with,
+                  find out below..
+                </p>
+
+                <a
+                  target="_blank"
+                  href="https://wa.me/+2349064810421?text=Wagwan✌🏾,%20I%20would%20love%20to%20connect%20and%20make%20inquiries%20concerning%20your%20awesome%20and%20mind-blowing%20services!"
+                  class="btn has-before"
+                  >Hit me Up📱</a
+                >
               </div>
 
               <div>
-
                 <ul class="skills-list">
-
                   <li>
                     <div class="progress-wrapper">
                       <p class="porgress-label">Web Dev.</p>
@@ -351,7 +415,7 @@
                     </div>
 
                     <div class="progress-bg">
-                      <div class="progress" style="width: 84%;"></div>
+                      <div class="progress" style="width: 84%"></div>
                     </div>
                   </li>
 
@@ -363,7 +427,7 @@
                     </div>
 
                     <div class="progress-bg">
-                      <div class="progress" style="width: 75%;"></div>
+                      <div class="progress" style="width: 75%"></div>
                     </div>
                   </li>
 
@@ -375,7 +439,7 @@
                     </div>
 
                     <div class="progress-bg">
-                      <div class="progress" style="width: 85%;"></div>
+                      <div class="progress" style="width: 85%"></div>
                     </div>
                   </li>
 
@@ -387,7 +451,7 @@
                     </div>
 
                     <div class="progress-bg">
-                      <div class="progress" style="width: 90%;"></div>
+                      <div class="progress" style="width: 90%"></div>
                     </div>
                   </li>
 
@@ -399,7 +463,7 @@
                     </div>
 
                     <div class="progress-bg">
-                      <div class="progress" style="width: 59%;"></div>
+                      <div class="progress" style="width: 59%"></div>
                     </div>
                   </li>
 
@@ -411,7 +475,7 @@
                     </div>
 
                     <div class="progress-bg">
-                      <div class="progress" style="width: 7%;"></div>
+                      <div class="progress" style="width: 7%"></div>
                     </div>
                   </li>
 
@@ -423,186 +487,254 @@
                     </div>
 
                     <div class="progress-bg">
-                      <div class="progress" style="width: 18%;"></div>
+                      <div class="progress" style="width: 18%"></div>
                     </div>
                   </li>
-
                 </ul>
-
               </div>
-
             </div>
-
           </div>
         </section>
 
         <!-- #PORTFOLIO -->
 
-        <section class="portfolio" aria-labelledby="portfolio-label">
-
-            <div class="title-wrapper container">
-
-              <div>
-                <p class="section-subtitle" id="portfolio-label">Samuel San's Works 👨🏾‍💻</p>
-
-                <h2 class="h2 section-title">Portfolio(Tenji)🏆</h2>
-              </div>
-
-              <p class="section-text">
-                Step into my digital dojo—where ideas go from 0 to unreal, fueled by code and creativity. Ready to unlock what's brewing behind the screen? Come get a glimpse into what's cooking!
+        <section
+          id="portfolio"
+          class="portfolio"
+          aria-labelledby="portfolio-label"
+        >
+          <div class="title-wrapper container">
+            <div>
+              <p class="section-subtitle" id="portfolio-label">
+                Samuel San's Works 👨🏾‍💻
               </p>
 
+              <h2 class="h2 section-title">Portfolio(Tenji)🏆</h2>
             </div>
 
-            <div class="slider" data-slider>
+            <p class="section-text">
+              Step into my digital dojo—where ideas go from 0 to unreal, fueled
+              by code and creativity. Ready to unlock what's brewing behind the
+              screen? Come get a glimpse into what's cooking!
+            </p>
+          </div>
 
-              <ul class="slider-container" data-slider-container>
+          <div class="slider" data-slider>
+            <ul class="slider-container" data-slider-container>
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/Alexander Fisayo's Portfolio Thumbnail.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
 
-                <li class="slider-item">
-                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Alexander Fisayo</h3>
 
-                    <img src="./assets/images/Alexander Fisayo's Portfolio Thumbnail.png" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
-
-                    <div class="card-content">
-                      <h3 class="h3 card-title">Alexander Fisayo</h3>
-
-                      <p class="card-text">Portfolio Website Dev.</p>
-                    </div>
-
-                    <a href="#" class="layer-link"></a>
-
+                    <p class="card-text">Portfolio Website Dev.</p>
                   </div>
-                </li>
 
-                <li class="slider-item">
-                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+                  <a
+                    target="_blank"
+                    href="https://fisalex.ddnsgeek.com"
+                    class="layer-link"
+                  ></a>
+                </div>
+              </li>
 
-                    <img src="./assets/images/portfolio-2.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/Kitchenware Thumbnail.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
 
-                    <div class="card-content">
-                      <h3 class="h3 card-title">Kitchenware.com</h3>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Kitchenware.com</h3>
 
-                      <p class="card-text">E-commerce Website Dev.</p>
-                    </div>
-
-                    <a href="#" class="layer-link"></a>
-
+                    <p class="card-text">E-commerce Website Dev.</p>
                   </div>
-                </li>
 
-                <li class="slider-item">
-                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
 
-                    <img src="./assets/images/Taiwo Oladejo's Portfolio Thumbnail.png" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/Taiwo Oladejo's Portfolio Thumbnail.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
 
-                    <div class="card-content">
-                      <h3 class="h3 card-title">Taiwo Oladejo</h3>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Taiwo Oladejo</h3>
 
-                      <p class="card-text">Portfolio Website Dev.</p>
-                    </div>
-
-                    <a href="#" class="layer-link"></a>
-
+                    <p class="card-text">Portfolio Website Dev.</p>
                   </div>
-                </li>
 
-                <li class="slider-item">
-                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
 
-                    <img src="./assets/images/portfolio-4.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/portfolio-2.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
 
-                    <div class="card-content">
-                      <h3 class="h3 card-title">B.T.G(Bridge The Gap)</h3>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">B.T.G(Bridge The Gap)</h3>
 
-                      <p class="card-text">Web App / UI Design</p>
-                    </div>
-
-                    <a href="#" class="layer-link"></a>
-
+                    <p class="card-text">Web App / UI Design</p>
                   </div>
-                </li>
 
-                <li class="slider-item">
-                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
 
-                    <img src="./assets/images/portfolio-5.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/portfolio-5.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
 
-                    <div class="card-content">
-                      <h3 class="h3 card-title">F.T.L(For The Love)</h3>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">F.T.L(For The Love)</h3>
 
-                      <p class="card-text">PASS / Cloud Service / Dev.</p>
-                    </div>
-
-                    <a href="#" class="layer-link"></a>
-
+                    <p class="card-text">PASS / Cloud Service / Dev.</p>
                   </div>
-                </li>
 
-                <li class="slider-item">
-                  <div class="portfolio-card img-holder" style="--width: ; --height: ;">
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
 
-                    <img src="./assets/images/portfolio-6.jpg" width="600" height="600" loading="lazy" alt="portfolio" class="img-cover">
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/portfolio-6.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
 
-                    <div class="card-content">
-                      <h3 class="h3 card-title">
-                        L.O.T.T(Living Out Thy Thoughts)</h3>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      L.O.T.T(Living Out Thy Thoughts)
+                    </h3>
 
-                      <p class="card-text">AR/ Dev./ Web App</p>
-                    </div>
-
-                    <a href="#" class="layer-link"></a>
-
+                    <p class="card-text">AR/ Dev./ Web App</p>
                   </div>
-                </li>
 
-              </ul>
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
+            </ul>
 
-              <div class="slider-controls">
-                <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
-                    <div class="line"></div>
-                    <div class="arrow"></div>
-                </button>
+            <div class="slider-controls">
+              <button
+                class="slider-control prev"
+                data-slider-prev
+                aria-label="Slide to previous item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
 
-                <button class="slider-control next" data-slider-next aria-label="Slide to next item">
-                    <div class="line"></div>
-                    <div class="arrow"></div>
-                </button>
-              </div>
-
+              <button
+                class="slider-control next"
+                data-slider-next
+                aria-label="Slide to next item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
             </div>
-
+          </div>
         </section>
 
         <!-- #BLOG -->
 
-        <section class="section blog" aria-labelledby>
+        <section id="blog" class="section blog" aria-labelledby>
           <div class="container">
-
             <p class="section-subtitle" id="blog-label">Recent Articles</p>
 
             <h2 class="h2 section-title">Latest News</h2>
 
             <ul class="blog-list">
-
               <li>
                 <div class="blog-card">
-
-                  <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                    <img src="./assets/images/blog-1.jpg" width="700" height="470" loading="lazy" alt="Project B.T.G; The Journey So far..." class="img-cover">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 700; --height: 470"
+                  >
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      width="700"
+                      height="470"
+                      loading="lazy"
+                      alt="Project B.T.G; The Journey So far..."
+                      class="img-cover"
+                    />
                   </figure>
 
                   <div class="card-content">
-
                     <time datetime="2024-11-11" class="time">
                       <span class="span text-lg">11</span>
                       Healing 2024
                     </time>
 
                     <div class="">
-                      <h3 class="h3 card-title">Project B.T.G; The Journey so far...</h3>
+                      <h3 class="h3 card-title">
+                        Project B.T.G; The Journey so far...
+                      </h3>
 
                       <p class="card-text">
-                        Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt ornare.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi illum nobis aperiam. Deleniti quae laboriosam hic
+                        eaque corrupti! Praesentium, sunt minus incidunt dolores
+                        ipsam culpa id quos asperiores vero optio.
                       </p>
 
                       <a href="#" class="btn has-before">
@@ -611,31 +743,43 @@
                         <ion-icon name="arrow-forward"></ion-icon>
                       </a>
                     </div>
-
                   </div>
-
                 </div>
               </li>
 
               <li>
                 <div class="blog-card">
-
-                  <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                    <img src="./assets/images/blog-2.jpg" width="700" height="470" loading="lazy" alt="Project B.T.G; The Journey So far..." class="img-cover">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 700; --height: 470"
+                  >
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      width="700"
+                      height="470"
+                      loading="lazy"
+                      alt="Project B.T.G; The Journey So far..."
+                      class="img-cover"
+                    />
                   </figure>
 
                   <div class="card-content">
-
                     <time datetime="2024-11-16" class="time">
                       <span class="span text-lg">16</span>
                       Healing 2024
                     </time>
 
                     <div class="">
-                      <h3 class="h3 card-title">Just Give up - It's not for everybody(The Dev. IP Syndrome)....</h3>
+                      <h3 class="h3 card-title">
+                        Just Give up - It's not for everybody(The Dev. IP
+                        Syndrome)....
+                      </h3>
 
                       <p class="card-text">
-                        Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt ornare.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugit id similique, a ullam amet deserunt corporis?
+                        Maiores corporis quaerat sunt odit hic adipisci neque
+                        quae! In asperiores similique unde expedita?
                       </p>
 
                       <a href="#" class="btn has-before">
@@ -644,91 +788,96 @@
                         <ion-icon name="arrow-forward"></ion-icon>
                       </a>
                     </div>
-
                   </div>
-
                 </div>
               </li>
-
             </ul>
-
           </div>
         </section>
-
       </article>
     </main>
 
     <!-- #FOOTER -->
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
-
         <ul class="footer-list">
-
           <li>
-            <p class="h4 footer-list-title">Get in touch</p>
+            <a href="tel:+2349064810421" class="footer-link">
+              <p class="h4 footer-list-title">Get in touch</p>
+            </a>
           </li>
 
           <li>
-            <a href="mailto:certifieddeveloper6@gmail.com" class="footer-link">@certifieddev</a>
+            <a href="mailto:certifieddeveloper6@gmail.com" class="footer-link">
+              @certifieddev
+            </a>
           </li>
-
         </ul>
 
         <ul class="footer-list">
-
           <li>
-            <p class="h4 footer-list-title">Location</p>
+            <a
+              target="_blank"
+              href="https://maps.app.goo.gl/vPuhEEaGjeLV168z6"
+              class="footer-link"
+            >
+              <p class="h4 footer-list-title">Location</p>
+              Ogbomoso - Nigeria
+            </a>
           </li>
-
-          <li>
-            <a href="#" class="footer-link">Ogbomoso - Nigeria</a>
-          </li>
-
         </ul>
 
         <ul class="social-list">
-
           <li>
-            <a href="#" class="social-link">
-              <i class='bx bxl-dribbble' style='color:#ffffff'></i>
+            <a
+              target="_blank"
+              href="https://dribbble.com/certifieddev"
+              class="social-link"
+            >
+              <i class="bx bxl-dribbble" style="color: #ffffff"></i>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <i class='bx bxl-instagram' style='color:#ffffff' ></i>
+            <a
+              target="_blank"
+              href="https://github.com/certifieddev4real"
+              class="social-link"
+            >
+              <i class="bx bxl-github" style="color: #ffffff"></i>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <i class='bx bxl-linkedin' style='color:#ffffff' ></i>
+            <a target="_blank" href="#" class="social-link">
+              <i class="bx bxl-instagram" style="color: #ffffff"></i>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <i class='bx bxl-twitter' style='color:#ffffff' ></i>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/samuel-olanrewaju-7bb4051bb"
+              class="social-link"
+            >
+              <i class="bx bxl-linkedin" style="color: #ffffff"></i>
             </a>
           </li>
 
+          <li>
+            <a target="_blank" href="#" class="social-link">
+              <i class="bx bxl-twitter" style="color: #ffffff"></i>
+            </a>
+          </li>
         </ul>
-
       </div>
     </footer>
 
     <!-- custom js link -->
     <script src="./assets/js/script.js"></script>
 
-    <!-- ionicon link -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

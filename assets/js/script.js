@@ -31,6 +31,7 @@ const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const overlay = document.querySelector("[data-overlay]");
 
+// Function to toggle the navbar
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   navToggleBtn.classList.toggle("active");
@@ -38,7 +39,20 @@ const toggleNavbar = function () {
   document.body.classList.toggle("nav-active");
 };
 
-addEventOnElements(navTogglers, "click", toggleNavbar);
+// Add event listener to toggle button and overlay
+navTogglers.forEach((toggler) => {
+  toggler.addEventListener("click", toggleNavbar);
+});
+
+// Add event listener to navbar links to close navbar when clicked
+const navLinks = document.querySelectorAll("[data-navbar] a");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (navbar.classList.contains("active")) {
+      toggleNavbar();
+    }
+  });
+});
 
 /**
  * HEADER
@@ -143,4 +157,26 @@ const initSlider = function (currentSlider) {
 
 for (let i = 0, len = sliders.length; i < len; i++) {
   initSlider(sliders[i]);
+}
+
+/**
+   * SCROLL REVEAL
+   */
+
+ScrollReveal({ 
+  // reset: true,
+  distance: '80px',
+  duration: 2000,
+  delay: 150
+});
+
+ScrollReveal().reveal('h1', { origin: 'top' });
+ScrollReveal().reveal('.hero-title, .section-text, .section-title, .section-text', { origin: 'bottom' });
+ScrollReveal().reveal('.hero-banner, .btn, .slider', { origin: 'left' });
+ScrollReveal().reveal('.hero-subtitle, .section-subtitle', { origin: 'right' });
+
+if (window.innerWidth < 576) {
+  ScrollReveal().reveal('.logo', { distance: '20px', duration: 400 });
+} else {
+  ScrollReveal().reveal('.logo', { distance: '50px', duration: 600 });
 }
