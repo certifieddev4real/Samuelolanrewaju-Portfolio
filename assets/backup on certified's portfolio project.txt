@@ -1,0 +1,2094 @@
+HTML;
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- primary meta tags -->
+    <title>Samuel Olanrewaju - Front-End Developer</title>
+    <meta name="title" content="Samuel Olanrewaju - Front-End Developer" />
+    <meta
+      name="description"
+      content="This is a personal portfolio made by & for certifieddev"
+    />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- boxicon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- preload images -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <!-- #PRELOADER -->
+
+    <div class="preloader" data-preloader>
+      <div class="circle"></div>
+    </div>
+
+    <!-- #HEADER -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="/" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="90"
+            height="40"
+            alt="Certified home"
+          />
+        </a>
+
+        <button
+          class="nav-toggle-btn"
+          data-nav-toggler
+          data-nav-toggle-btn
+          aria-label="Toggle menu"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#resume" class="navbar-link">Resume</a>
+            </li>
+
+            <li>
+              <a href="#service" class="navbar-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">Skills</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#footer" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- #HERO -->
+
+        <section id="home" class="section hero" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Samuel Olanrewaju</h1>
+
+              <p class="hero-subtitle">Certified Developer</p>
+
+              <div class="hero-banner">
+                <img
+                  src="./assets/images/hero-banner-MML.png"
+                  width="800"
+                  height="800"
+                  alt="Samuel Olanrewaju"
+                  class="w-100"
+                />
+              </div>
+
+              <p id="resume" class="section-text">
+                Konnichiwa👋🏾, I'm Samuel, a front-end developer and an anime
+                otaku who's all about crafting solutions that blow your mind 💥
+                and speaking bad Japanese (Hai!, Totemo warui😎). My mission? To
+                get you the results that make you think, “Why didn't I work with
+                this good-looking guy sooner?!” 🤯 Because, seriously, who
+                wouldn't? 😏.
+              </p>
+
+              <a
+                download=""
+                href="./assets/Certified's Resume.pdf"
+                class="btn has-before"
+              >
+                <span class="span">Download Resume</span>
+
+                <i class="bx bx-download"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- #SERVICE -->
+
+        <section id="service" class="service" aria-labelledby="service-label">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <p class="section-subtitle">What I Do & How I Do It.</p>
+                <h2 class="h2 section-title" id="service-label">Services</h2>
+              </div>
+
+              <p class="section-text">
+                Ready for a deep dive into digital magic? Trust me - these
+                services are where the magic (and mischief) happens. 🌌🤫
+              </p>
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-container service-list swiper-wrapper" data-slider-container>
+                <li class="slider-item swiper-slide" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <i class="bx bx-link-alt"></i>
+                      <i class="bx bx-briefcase"></i>
+                      <i class="bx bx-globe"></i>
+                    </div>
+
+                    <h3 class="h3 card-title">The Missing Link</h3>
+
+                    <p class="card-text">
+                      Tailored portfolios designed to transform your online
+                      presence. Perfect for freelancers and businesses who need
+                      to showcase their value. Let's get yours live today! 🌐🔗
+                    </p>
+
+                    <span class="text-lg card-number">01</span>
+
+                    <a
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I%20want%20to%20build%20a%20portfolio!"
+                      class="layer-link"
+                      aria-label="More about my portfolio development service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <i class="bx bx-desktop"></i>
+                      <i class="bx bx-devices"></i>
+                      <i class="bx bx-laptop"></i>
+                    </div>
+
+                    <h3 class="h3 card-title">Size Matters: Adaptable Sites</h3>
+
+                    <p class="card-text">
+                      Crafted to adapt, no matter the screen size. Your website,
+                      made beautiful and functional, wherever it's viewed. 📱💻
+                    </p>
+
+                    <span class="text-lg card-number">02</span>
+
+                    <a
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I%20want%20you%20to%20develop/revamp%20a%20website%20for%20my%20business!"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <i class="bx bx-rocket"></i>
+                      <i class="bx bx-bar-chart-alt-2"></i>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Visibility Vibes: SEO-Boosted Pages
+                    </h3>
+
+                    <p class="card-text">
+                      Built with SEO secrets, bringing visibility and results.
+                      Rise above the noise and get seen - organically. 🚀📈
+                    </p>
+
+                    <span class="text-lg card-number">03</span>
+
+                    <a
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I%20heard%20you%20could%20improve%20my%20bussiness's%20search%20appearance%20rate?"
+                      class="layer-link"
+                      aria-label="More about my SEO service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <i class="bx bx-hard-hat"></i>
+                      <i class="bx bx-cog"></i>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Control Freak: Your Custom CMS
+                    </h3>
+
+                    <p class="card-text">
+                      Your site, your rules. Easy updates, total control, with
+                      customization that truly feels like you. 🔧✨
+                    </p>
+
+                    <span class="text-lg card-number">04</span>
+
+                    <a
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20So%20i%20heard%20you%20also%20build%20beautiful%20CMS(content management system)%20websites,%20i%20want%20one%20for%20my%20business%20also!"
+                      class="layer-link"
+                      aria-label="More about my CMS(Wordpress, Wix, and the likes) integration service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <i class="bx bx-tachometer"></i>
+                      <i class="bx bx-check-shield"></i>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Front-End Maintenance & Optimization
+                    </h3>
+
+                    <p class="card-text">
+                      Fast, secure, optimized to the max. Like a digital tune-up
+                      that keeps things running, without the hassle. 🔥🔍
+                    </p>
+
+                    <span class="text-lg card-number">05</span>
+
+                    <a
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I%20heard%20you%20can%20give%20my%20business's%20website%20a%20sleek%20makeover.%20Can%20you%20help%20me%20make%20it%20look%20more%20modern%20and%20user-friendly?"
+                      class="layer-link"
+                      aria-label="More about my Maintenance & Optimization service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <i class="bx bx-palette"></i>
+                      <i class="bx bxs-star-half"></i>
+                    </div>
+
+                    <h3 class="h3 card-title">Interactive UI & Animations</h3>
+
+                    <p class="card-text">
+                      Sites with soul. Scrolls, clicks, hovers - crafted to
+                      captivate, engage, and delight, every step of the way.
+                      ✨🎨
+                    </p>
+
+                    <span class="text-lg card-number">06</span>
+
+                    <a
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I'm%20looking%20to%20enhance%20my%20website's%20user%20experience.%20Can%20you%20help%20me%20add%20some%20interactive%20elements%20and%20animations?"
+                      class="layer-link"
+                      aria-label="More about my Interactive UI & Animations service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <i class="bx bx-moon"></i>
+                      <i class="bx bxs-universal-access"></i>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Shades On: Dark Mode & Accessibility
+                    </h3>
+
+                    <p class="card-text">
+                      Elegant accessibility with a dash of mystery. Dark mode
+                      included, because we all need a bit of style. 🌑💫.
+                    </p>
+
+                    <span class="text-lg card-number">07</span>
+
+                    <a
+                      target="_blank"
+                      href="https://wa.me/+2349064810421?text=Hi✌🏾,%20I'm%20interested%20in%20making%20my%20website%20more%20accessible.%20Can%20you%20also%20help%20me%20add%20a%20dark%20mode%20feature?"
+                      class="layer-link"
+                      aria-label="More about my Dark Mode & Accessibility service"
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="slider-controls">
+                <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                    <div class="line"></div>
+                    <div class="arrow"></div>
+                </button>
+
+                <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                    <div class="line"></div>
+                    <div class="arrow"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- #SKILLS -->
+
+        <section id="skills" class="section skills" aria-label="our skills">
+          <div class="container">
+            <p class="section-subtitle">
+              I script the future - Ko-dingu jutsu no goku-i wo kiwame-te
+              🐱‍👤.(See what i mean😥, Bad Japanese 🤦🏾‍♂️)
+            </p>
+
+            <h2 class="h2 section-title">
+              Creating Tomorrow's Online Playground Today.
+            </h2>
+
+            <div class="skills-wrapper">
+              <div>
+                <p class="section-text">
+                  Here lies an array of jutsu—honed through dedication and
+                  experience—showcasing my digital expertise and passion for
+                  crafting extraordinary online solutions, each skill a
+                  testament to my journey in mastering the art of innovation.
+                </p>
+
+                <p class="section-text">
+                  Where creativity and strategy collide, building web solutions
+                  that inspire, engage, and elevate your brand.
+                </p>
+
+                <p class="section-text">
+                  Shoot me a text, will ya? I've been told i'm fun to chat with,
+                  find out below..
+                </p>
+
+                <a
+                  target="_blank"
+                  href="https://wa.me/+2349064810421?text=Wagwan✌🏾,%20I%20would%20love%20to%20connect%20and%20make%20inquiries%20concerning%20your%20awesome%20and%20mind-blowing%20services!"
+                  class="btn has-before"
+                  >Hit me Up📱</a
+                >
+              </div>
+
+              <div>
+                <ul class="skills-list">
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Web Dev.</p>
+
+                      <data value="84" class="progress-value">84%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 84%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Tailwind CSS</p>
+
+                      <data value="75" class="progress-value">75%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 75%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">JS</p>
+
+                      <data value="85" class="progress-value">85%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Wordpress</p>
+
+                      <data value="90" class="progress-value">90%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 90%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">React JS</p>
+
+                      <data value="59" class="progress-value">59%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 59%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Node JS</p>
+
+                      <data value="7" class="progress-value">7%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 7%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="porgress-label">Vue JS</p>
+
+                      <data value="18" class="progress-value">18%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 18%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- #PORTFOLIO -->
+
+        <section
+          id="portfolio"
+          class="portfolio"
+          aria-labelledby="portfolio-label"
+        >
+          <div class="title-wrapper container">
+            <div>
+              <p class="section-subtitle" id="portfolio-label">
+                Samuel San's Works 👨🏾‍💻
+              </p>
+
+              <h2 class="h2 section-title">Portfolio(Tenji)🏆</h2>
+            </div>
+
+            <p class="section-text">
+              Step into my digital dojo—where ideas go from 0 to unreal, fueled
+              by code and creativity. Ready to unlock what's brewing behind the
+              screen? Come get a glimpse into what's cooking!
+            </p>
+          </div>
+
+          <div class="slider" data-slider>
+            <ul class="slider-container" data-slider-container>
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/Alexander Fisayo's Portfolio Thumbnail.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Alexander Fisayo</h3>
+
+                    <p class="card-text">Portfolio Website Dev.</p>
+                  </div>
+
+                  <a
+                    target="_blank"
+                    href="https://fisalex.ddnsgeek.com"
+                    class="layer-link"
+                  ></a>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/Kitchenware Thumbnail.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Kitchenware.com</h3>
+
+                    <p class="card-text">E-commerce Website Dev.</p>
+                  </div>
+
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/Taiwo Oladejo's Portfolio Thumbnail.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Taiwo Oladejo</h3>
+
+                    <p class="card-text">Portfolio Website Dev.</p>
+                  </div>
+
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/portfolio-2.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">B.T.G(Bridge The Gap)</h3>
+
+                    <p class="card-text">Web App / UI Design</p>
+                  </div>
+
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/portfolio-5.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">F.T.L(For The Love)</h3>
+
+                    <p class="card-text">PASS / Cloud Service / Dev.</p>
+                  </div>
+
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: ; --height: "
+                >
+                  <img
+                    src="./assets/images/portfolio-6.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      L.O.T.T(Living Out Thy Thoughts)
+                    </h3>
+
+                    <p class="card-text">AR/ Dev./ Web App</p>
+                  </div>
+
+                  <a target="_blank" href="#" class="layer-link"></a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="slider-controls">
+              <button
+                class="slider-control prev"
+                data-slider-prev
+                aria-label="Slide to previous item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button
+                class="slider-control next"
+                data-slider-next
+                aria-label="Slide to next item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- #BLOG -->
+
+        <section id="blog" class="section blog" aria-labelledby>
+          <div class="container">
+            <p class="section-subtitle" id="blog-label">Recent Articles</p>
+
+            <h2 class="h2 section-title">Latest News</h2>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 700; --height: 470"
+                  >
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      width="700"
+                      height="470"
+                      loading="lazy"
+                      alt="Project B.T.G; The Journey So far..."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time datetime="2024-11-11" class="time">
+                      <span class="span text-lg">11</span>
+                      Healing 2024
+                    </time>
+
+                    <div class="">
+                      <h3 class="h3 card-title">
+                        Project B.T.G; The Journey so far...
+                      </h3>
+
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi illum nobis aperiam. Deleniti quae laboriosam hic
+                        eaque corrupti! Praesentium, sunt minus incidunt dolores
+                        ipsam culpa id quos asperiores vero optio.
+                      </p>
+
+                      <a href="#" class="btn has-before">
+                        <span class="span">Read more</span>
+
+                        <ion-icon name="arrow-forward"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 700; --height: 470"
+                  >
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      width="700"
+                      height="470"
+                      loading="lazy"
+                      alt="Project B.T.G; The Journey So far..."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time datetime="2024-11-16" class="time">
+                      <span class="span text-lg">16</span>
+                      Healing 2024
+                    </time>
+
+                    <div class="">
+                      <h3 class="h3 card-title">
+                        Just Give up - It's not for everybody(The Dev. IP
+                        Syndrome)....
+                      </h3>
+
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugit id similique, a ullam amet deserunt corporis?
+                        Maiores corporis quaerat sunt odit hic adipisci neque
+                        quae! In asperiores similique unde expedita?
+                      </p>
+
+                      <a href="#" class="btn has-before">
+                        <span class="span">Read more</span>
+
+                        <ion-icon name="arrow-forward"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- #FOOTER -->
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li>
+            <a href="tel:+2349064810421" class="footer-link">
+              <p class="h4 footer-list-title">Get in touch</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:certifieddeveloper6@gmail.com" class="footer-link">
+              @certifieddev
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <a
+              target="_blank"
+              href="https://maps.app.goo.gl/ZSB2rdn1Xnrr526f6"
+              class="footer-link"
+            >
+              <p class="h4 footer-list-title">Location</p>
+              Ogbomoso - Nigeria
+            </a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li>
+            <a
+              target="_blank"
+              href="https://dribbble.com/certifieddev"
+              class="social-link"
+            >
+              <i class="bx bxl-dribbble" style="color: #ffffff"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/certifieddev4real"
+              class="social-link"
+            >
+              <i class="bx bxl-github" style="color: #ffffff"></i>
+            </a>
+          </li>
+
+          <li>
+            <a target="_blank" href="#" class="social-link">
+              <i class="bx bxl-instagram" style="color: #ffffff"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/samuel-olanrewaju-7bb4051bb"
+              class="social-link"
+            >
+              <i class="bx bxl-linkedin" style="color: #ffffff"></i>
+            </a>
+          </li>
+
+          <li>
+            <a target="_blank" href="#" class="social-link">
+              <i class="bx bxl-twitter" style="color: #ffffff"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+
+CSS;
+
+/*-----------------------------------*\
+  #main.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2024 certifieddev
+ */
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+  /* colors */
+
+  --raisin-black: hsla(220, 16%, 18%, 1);
+  --roman-silver: hsla(219, 14%, 40%, 1);
+  --eerie-black: hsla(221, 10%, 12%, 1);
+  --black: hsla(220, 20%, 5%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --white_a10: hsla(0, 0%, 100%, 0.1);
+  --white_a5: hsla(0, 0%, 100%, 0.05);
+
+  /* typography */
+
+  --ff-syne: "Syne", sans-serif;
+
+  --fs-1: 4.8rem;
+  --fs-2: 4.4rem;
+  --fs-3: 4rem;
+  --fs-4: 2.4rem;
+  --fs-5: 2rem;
+  --fs-6: 1.8rem;
+  --fs-7: 1.4rem;
+  --fs-8: 1.2rem;
+
+  --fw-800: 800;
+  --fw-700: 700;
+
+  /* spacing */
+
+  --section-padding: 120px;
+
+  /* border radius */
+
+  --radius-pill: 100px;
+  --radius-circle: 50%;
+  --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
+
+  /* transition */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+  --cubic-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --cubic-ease-out: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+data,
+button,
+i {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+i {
+  pointer-events: none;
+}
+
+html {
+  font-family: var(--ff-syne);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--eerie-black);
+  color: var(--roman-silver);
+  font-size: 1.6rem;
+  line-height: 1.75;
+  overflow: hidden;
+  height: 300vh;
+}
+
+body.loaded {
+  overflow: overlay;
+}
+
+body.nav-active {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 30px;
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.container {
+  padding-inline: 12px;
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+.h1 {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-800);
+}
+
+.h1,
+.h2,
+.h4 {
+  color: var(--white);
+  line-height: 1;
+}
+
+.h2 {
+  font-size: var(--fs-2);
+}
+
+.h3 {
+  color: var(--white);
+  font-size: var(--fs-4);
+  line-height: 1.5;
+}
+
+.h4 {
+  font-size: var(--fs-5);
+}
+
+.h2,
+.h3,
+.h4 {
+  font-weight: var(--fw-700);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.has-before {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+
+.btn {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: max-content;
+  min-width: max-content;
+  padding: 20px 32px;
+}
+
+.btn::before {
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: 2px solid var(--white_a5);
+  border-radius: var(--radius-circle);
+  transition: var(--cubic-bounce);
+}
+
+.btn:is(:hover, :focus-visible)::before {
+  left: calc(100% - 70px);
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  margin-block-end: 20px;
+  letter-spacing: 2px;
+}
+
+.section-title {
+  margin-block-end: 45px;
+}
+
+.text-lg {
+  font-family: var(--ff-syne);
+  font-size: var(--fs-1);
+}
+
+.layer-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slider {
+  --slider-items: 1;
+  --item-gap: 12px;
+
+  margin-block-start: 60px;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  gap: var(--item-gap);
+  transition: transform var(--cubic-ease-out);
+}
+
+.slider-item {
+  --total-gap: calc(var(--item-gap) * (var(--slider-items) - 1));
+  --item-width: calc(
+    (100% / var(--slider-items)) - (var(--total-gap) / var(--slider-items))
+  );
+
+  min-width: var(--item-width);
+  width: var(--item-width);
+}
+
+.slider-control {
+  position: relative;
+  max-width: max-content;
+  padding-block: 8px;
+  opacity: 0.5;
+}
+
+.slider-control .line {
+  width: 30px;
+  height: 1px;
+  background-color: var(--white);
+}
+
+.slider-control .arrow {
+  position: absolute;
+  transform: translateY(-60%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-color: var(--white);
+}
+
+.slider-control.prev .arrow {
+  left: 0;
+  border-width: 0 0 1px 1px;
+}
+
+.slider-control.next .arrow {
+  right: 0;
+  border-width: 1px 1px 0 0;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-block-start: 48px;
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--white_a5);
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*-----------------------------------*\
+  #PRELOADER
+\*-----------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--eerie-black);
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  transition: var(--transition-2);
+  transition-delay: 0.5s;
+
+  display: none;
+}
+
+.preloader.loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader .circle {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--raisin-black);
+  border-top-color: var(--white);
+  border-radius: var(--radius-circle);
+  animation: rotate360 1s linear infinite;
+  transition: var(--transition-2);
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.preloader.loaded .circle {
+  opacity: 0;
+}
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--eerie-black);
+  padding-block: 24px;
+  z-index: 4;
+  transition: var(--transition-1);
+}
+
+.header.active {
+  background-color: var(--raisin-black);
+  padding-block: 16px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle-btn {
+  width: 50px;
+  height: 50px;
+  background-color: var(--white);
+  border-radius: var(--radius-circle);
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  transition: var(--transition-1);
+}
+
+.nav-toggle-btn:is(:hover, :focus-visisble) {
+  gap: 10px;
+}
+
+.nav-toggle-btn.active {
+  gap: 8px;
+}
+
+.nav-toggle-btn .line {
+  width: 25px;
+  height: 2px;
+  background-color: var(--black);
+  transition: var(--transition-1);
+}
+
+.nav-toggle-btn.active .line-1 {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.nav-toggle-btn.active .line-2 {
+  transform: rotate(-45deg) translate(3px, -2px);
+}
+
+.navbar {
+  position: absolute;
+  top: 100%;
+  right: -370px;
+  max-width: 370px;
+  width: 100%;
+  background-color: var(--white);
+  height: 100vh;
+  text-align: center;
+  padding: 56px 40px;
+  visibility: hidden;
+  transition: 0.25s var(--cubic-in);
+  z-index: 1;
+}
+
+.navbar.active {
+  transform: translateX(-370px);
+  visibility: visible;
+  transition-timing-function: var(--cubic-out);
+}
+
+.navbar-link {
+  color: var(--raisin-black);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  padding-block: 10px;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible) {
+  text-shadow: 1px 0 0 var(--eerie-black);
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.hero {
+  padding-block-start: 130px;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  word-break: break-all;
+}
+
+.hero-subtitle {
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  color: var(--white);
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin-block: 10px 30px;
+}
+
+.hero-banner {
+  border-radius: var(--blob-radius);
+  overflow: hidden;
+  animation: blobAnim 30s linear infinite;
+}
+
+@keyframes blobAnim {
+  0%,
+  100% {
+    border-radius: var(--blob-radius);
+  }
+
+  10% {
+    border-radius: 33% 67% 50% 50% / 43% 39% 61% 57%;
+  }
+
+  20% {
+    border-radius: 51% 49% 31% 69% / 65% 39% 61% 35%;
+  }
+
+  30% {
+    border-radius: 51% 49% 56% 44% / 45% 39% 61% 55%;
+  }
+
+  40% {
+    border-radius: 66% 34% 33% 67% / 48% 71% 39% 52%;
+  }
+
+  50% {
+    border-radius: 46% 54% 33% 67% / 48% 30% 70% 52%;
+  }
+
+  60% {
+    border-radius: 46% 54% 56% 44% / 48% 30% 70% 52%;
+  }
+
+  70% {
+    border-radius: 46% 54% 56% 44% / 65% 53% 47% 35%;
+  }
+
+  80% {
+    border-radius: 67% 33% 56% 44% / 37% 53% 47% 63%;
+  }
+
+  90% {
+    border-radius: 46% 54% 32% 68% / 37% 53% 47% 63%;
+  }
+}
+
+.hero .section-text {
+  margin-block: 30px;
+}
+
+.hero .btn {
+  margin-inline: auto;
+}
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+.service-card {
+  position: relative;
+  background-color: var(--white);
+  height: 100%;
+  padding: 60px 40px 40px;
+  transition: var(--transition-2);
+}
+
+.service-card .card-icon i {
+  display: inline-flex;
+  color: var(--content-color, var(--raisin-black));
+  font-size: 6rem;
+  --ionic-stroke-width: 15px;
+}
+
+.service-card .card-icon i:nth-child(1) {
+  font-size: 5.5rem;
+}
+
+.service-card .card-title {
+  color: var(--content-color, var(--raisin-black));
+  margin-block: 20px;
+}
+
+.service-card .card-number {
+  margin-inline-start: auto;
+  font-weight: var(--fw-800);
+  line-height: 0.6;
+  max-width: max-content;
+  margin-block-start: 32px;
+  -webkit-text-stroke: 1px var(--content-color, var(--black));
+  -webkit-text-fill-color: transparent;
+  opacity: 0.4;
+}
+
+.service-card:is(:hover, :focus-within) {
+  background-color: var(--raisin-black);
+  --content-color: var(--white);
+}
+
+/*-----------------------------------*\
+  #SKILLS
+\*-----------------------------------*/
+
+.skills .section-text {
+  margin-block-end: 20px;
+}
+
+.skills .btn {
+  margin-block: 45px;
+}
+
+.skills-list li:not(:last-child) {
+  margin-block-end: 30px;
+}
+
+.progress-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw-700);
+  margin-block-end: 5px;
+}
+
+.progress-bg {
+  height: 6px;
+  background-color: var(--raisin-black);
+  border-radius: var(--radius-pill);
+}
+
+.progress {
+  height: inherit;
+  background-color: var(--white);
+  border-radius: inherit;
+}
+
+/*-----------------------------------*\
+  #PORTFOLIO
+\*-----------------------------------*/
+
+.portfolio .slider {
+  --item-gap: 16px;
+}
+
+.portfolio-card {
+  position: relative;
+  background-color: transparent;
+  transition: var(--cubic-ease-out);
+}
+
+.portfolio-card .img-cover {
+  transition: var(--cubic-ease-out);
+}
+
+.portfolio-card .card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-55%, -50%);
+  opacity: 0;
+  transition: var(--cubic-ease-out);
+  z-index: 1;
+}
+
+.portfolio-card .card-text {
+  color: var(--white);
+}
+
+.portfolio-card:is(:hover, :focus-within) .img-cover {
+  opacity: 0.1;
+  transform: scale(0.95);
+}
+
+.portfolio-card:is(:hover, :focus-within) .card-content {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
+
+.blog-list {
+  display: grid;
+  gap: 60px;
+}
+
+.blog-card {
+  display: grid;
+  gap: 40px;
+}
+
+.blog-card .card-content {
+  display: flex;
+  gap: 16px;
+  padding-inline: 16px;
+}
+
+.blog-card .time {
+  font-size: var(--fs-7);
+}
+
+.blog-card .time .span {
+  color: var(--white);
+  font-weight: var(--fw-700);
+  line-height: 0.9;
+}
+
+.blog-card .card-text {
+  margin-block: 20px;
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+  background-color: var(--raisin-black);
+  padding-block: 76px;
+}
+
+.footer .container {
+  display: grid;
+  gap: 20px;
+}
+
+.social-list {
+  display: flex;
+  gap: 8px;
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--white_a10);
+  border-radius: var(--radius-circle);
+  color: var(--white);
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus-visible) {
+  border-color: var(--white);
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 570px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .slider {
+    --slider-items: 2;
+  }
+
+  /**
+   * BLOG
+   */
+
+  .blog-card .card-content {
+    padding-inline: 32px;
+    gap: 32px;
+  }
+
+  /**
+   * FOOTER
+   */
+
+  .footer-list-title {
+    margin-block-end: 8px;
+  }
+}
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-2: 6rem;
+    --fs-3: 5.5rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .title-wrapper {
+    display: flex;
+    gap: 10%;
+  }
+
+  .title-wrapper .section-title {
+    margin-block-end: 0;
+  }
+
+  .title-wrapper .section-text {
+    margin-block-start: 40px;
+  }
+
+  /**
+   * HERO
+   */
+
+  .hero .container {
+    position: relative;
+  }
+
+  .hero-banner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 55%;
+    z-index: -1;
+  }
+
+  .hero-content {
+    width: 50%;
+    margin-inline-start: auto;
+    padding-block: 10%;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    text-shadow: 2px 2px 0 var(--eerie-black);
+  }
+
+  /**
+   * SKILL
+   */
+
+  .skills-wrapper {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 40px;
+  }
+
+  .skills .btn {
+    margin-block-end: 0;
+  }
+
+  /**
+   * BLOG
+   */
+
+  .blog-card .card-title {
+    --fs-4: 2.7rem;
+  }
+
+  /**
+   * FOOTER
+   */
+
+  .footer .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/**
+ * responsive for large than 992px screen
+ */
+
+@media (min-width: 992px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-3: 7rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 960px;
+  }
+
+  .title-wrapper {
+    gap: 15%;
+  }
+
+  .slider {
+    --slider-items: 3;
+  }
+
+  /**
+   * HERO
+   */
+
+  .hero-subtitle {
+    --fs-8: 1.4rem;
+  }
+
+  /**
+   * SKILL
+   */
+
+  .skills .section-title {
+    max-width: 16ch;
+  }
+
+  .skills-wrapper {
+    gap: 10%;
+  }
+
+  /**
+   * BLOG
+   */
+
+  .blog-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .blog-card .card-content {
+    padding: 32px;
+  }
+
+  .blog-list li:nth-child(2n) .card-banner {
+    order: 1;
+  }
+}
+
+/**
+ * responsive for large than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * spacing
+     */
+
+    --section-padding: 140px;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 1140px;
+  }
+
+  /**
+   * HEADER
+   */
+
+  .navbar {
+    top: 0;
+    display: grid;
+    place-content: center;
+  }
+
+  .nav-toggle-btn {
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    top: 0;
+  }
+
+  /**
+   * HERO
+   */
+
+  .hero-content {
+    width: 55%;
+  }
+
+  .hero-title {
+    word-break: normal;
+  }
+
+  .hero .section-text {
+    margin-block-end: 52px;
+  }
+}
+
+
+"use strict";
+
+/**
+ * event listener for multiple element
+ */
+
+const addEventOnElements = function (elements, eventType, callback) {
+  for (let i = 0, len = elements.length; i < len; i++) {
+    elements[i].addEventListener(eventType, callback);
+  }
+};
+
+/**
+ * PRELOADER
+ */
+
+const preloader = document.querySelector("[data-preloader]");
+
+window.addEventListener("DOMContentLoaded", function () {
+  preloader.classList.add("loaded");
+  document.body.classList.add("loaded");
+});
+
+/**
+ * NAVBAR
+ * navbar toggle for mobile
+ */
+
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+const navbar = document.querySelector("[data-navbar]");
+const overlay = document.querySelector("[data-overlay]");
+
+// Function to toggle the navbar
+const toggleNavbar = function () {
+  navbar.classList.toggle("active");
+  navToggleBtn.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("nav-active");
+};
+
+// Add event listener to toggle button and overlay
+navTogglers.forEach((toggler) => {
+  toggler.addEventListener("click", toggleNavbar);
+});
+
+// Add event listener to navbar links to close navbar when clicked
+const navLinks = document.querySelectorAll("[data-navbar] a");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (navbar.classList.contains("active")) {
+      toggleNavbar();
+    }
+  });
+});
+
+/**
+ * HEADER
+ * header active when window scrolls down by 100px
+ */
+
+const header = document.querySelector("[data-header]");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 100) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+});
+
+/**
+ * SLIDER
+ */
+
+const sliders = document.querySelectorAll("[data-slider]");
+
+const initSlider = function (currentSlider) {
+  const sliderContainer = currentSlider.querySelector(
+    "[data-slider-container]"
+  );
+  const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
+  const sliderNextBtn = currentSlider.querySelector("[data-slider-next]");
+
+  let totalSliderVisibleItems = Number(
+    getComputedStyle(currentSlider).getPropertyValue("--slider-items")
+  );
+  let totalSlidableItems =
+    sliderContainer.childElementCount - totalSliderVisibleItems;
+
+  let currentSlidePos = 0;
+
+  const moveSliderItem = function () {
+    sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
+  };
+
+  /**
+   * NEXT SLIDE
+   */
+
+  const slideNext = function() {
+    const slideEnd = currentSlidePos >= totalSlidableItems;
+
+    if (slideEnd) {
+        currentSlidePos = 0;
+    } else {
+        currentSlidePos++;
+    }
+
+    moveSliderItem();
+  }
+
+  sliderNextBtn.addEventListener("click", slideNext);
+
+  /**
+   * PREVIOUS SLIDE
+   */
+  const slidePrev = function () {
+    if (currentSlidePos <= 0) {
+        currentSlidePos = totalSlidableItems;
+    } else {
+        currentSlidePos--;
+    }
+
+    moveSliderItem();
+  }
+
+  sliderPrevBtn.addEventListener("click", slidePrev);
+
+  const dontHaveExtraItem = totalSlidableItems <= 0;
+  if (dontHaveExtraItem) {
+    sliderNextBtn.style.display = 'none';
+    sliderPrevBtn.style.display = 'none';
+  }
+
+  /**
+   * slide with [shift + mouse wheel]
+   */
+
+  currentSlider.addEventListener("wheel", function (event) {
+    if (event.shiftkey && event.deltaY > 0) slideNext();
+    if (event.shiftkey && event.deltaY > 0) slidePrev();
+  });
+
+  /**
+   * RESPONSIVE
+   */
+
+  window.addEventListener("resize", function () {
+    totalSliderVisibleItems = Number(getComputedStyle(currentSlider).getPropertyValue("--slider-items"));
+    totalSlidableItems = sliderContainer.childElementCount - totalSliderVisibleItems;
+
+    moveSliderItem();
+  });
+
+};
+
+for (let i = 0, len = sliders.length; i < len; i++) {
+  initSlider(sliders[i]);
+}
+
+/**
+   * SCROLL REVEAL
+   */
+
+ScrollReveal({ 
+  // reset: true,
+  distance: '80px',
+  duration: 2000,
+  delay: 150
+});
+
+ScrollReveal().reveal('h1, .heading', { origin: 'top' });
+ScrollReveal().reveal('.hero-title, .section-text, .section-title, .section-text', { origin: 'bottom' });
+ScrollReveal().reveal('.hero-banner, .btn, .slider', { origin: 'left' });
+ScrollReveal().reveal('.hero-subtitle, .section-subtitle', { origin: 'right' });
