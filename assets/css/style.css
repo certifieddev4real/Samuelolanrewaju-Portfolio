@@ -317,6 +317,7 @@ body.nav-active {
   aspect-ratio: var(--width) / var(--height);
   background-color: var(--white_a5);
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .img-cover {

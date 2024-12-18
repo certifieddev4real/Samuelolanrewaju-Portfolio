@@ -218,4 +218,3 @@ Ogbomoso - Nigeria
 <i class='bx bxl-instagram' style='color:#ffffff' ></i>
 <i class='bx bxl-linkedin' style='color:#ffffff' ></i>
 <i class='bx bxl-twitter' style='color:#ffffff' ></i>
-
