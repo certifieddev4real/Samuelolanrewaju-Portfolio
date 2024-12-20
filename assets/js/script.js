@@ -172,11 +172,5 @@ ScrollReveal({
 
 ScrollReveal().reveal('h1', { origin: 'top' });
 ScrollReveal().reveal('.hero-title, .section-text, .section-title, .section-text', { origin: 'bottom' });
-ScrollReveal().reveal('.hero-banner, .btn, .slider', { origin: 'left' });
-ScrollReveal().reveal('.hero-subtitle, .section-subtitle', { origin: 'right' });
-
-if (window.innerWidth < 576) {
-  ScrollReveal().reveal('.logo', { distance: '20px', duration: 400 });
-} else {
-  ScrollReveal().reveal('.logo', { distance: '50px', duration: 600 });
-}
+ScrollReveal().reveal('.hero-banner, .btn, .slider, .time, .card-title, .card-text', { origin: 'left' });
+ScrollReveal().reveal('.hero-subtitle, .section-subtitle, .card-banner, .bx-right-arrow-alt', { origin: 'right' });
