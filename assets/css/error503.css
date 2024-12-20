@@ -1,0 +1,451 @@
+/*-----------------------------------*\
+  #main.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2024 certifieddev
+ */
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+    /* colors */
+  
+    --raisin-black: hsla(220, 16%, 18%, 1);
+    --roman-silver: hsla(219, 14%, 40%, 1);
+    --eerie-black: hsla(221, 10%, 12%, 1);
+    --black: hsla(220, 20%, 5%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --white_a10: hsla(0, 0%, 100%, 0.1);
+    --white_a5: hsla(0, 0%, 100%, 0.05);
+  
+    /* typography */
+  
+    --ff-syne: "Syne", sans-serif;
+  
+    --fs-1: 4.8rem;
+    --fs-2: 4.4rem;
+    --fs-3: 4rem;
+    --fs-4: 2.4rem;
+    --fs-5: 2rem;
+    --fs-6: 1.8rem;
+    --fs-7: 1.4rem;
+    --fs-8: 1.2rem;
+  
+    --fw-800: 800;
+    --fw-700: 700;
+  
+    /* spacing */
+  
+    --section-padding: 120px;
+  
+    /* border radius */
+  
+    --radius-pill: 100px;
+    --radius-circle: 50%;
+    --blob-radius: 52% 48% 59% 41% / 53% 40% 60% 47%;
+  
+    /* transition */
+  
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+    --cubic-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --cubic-ease-out: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+  }
+  
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a,
+  img,
+  span,
+  data,
+  button,
+  i {
+    display: block;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    height: auto;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  i {
+    pointer-events: none;
+  }
+  
+  html {
+    font-family: var(--ff-syne);
+    font-size: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--eerie-black);
+    color: var(--roman-silver);
+    font-size: 1.6rem;
+    line-height: 1.75;
+    overflow: hidden;
+    height: 300vh;
+  }
+  
+  body.loaded {
+    overflow: overlay;
+  }
+  
+  body.nav-active {
+    overflow: hidden;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 30px;
+  }
+  
+  /*-----------------------------------*\
+    #REUSED STYLE
+  \*-----------------------------------*/
+  
+  .container {
+    padding-inline: 12px;
+  }
+  
+  .section {
+    padding-block: var(--section-padding);
+  }
+  
+  .h1 {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-800);
+  }
+  
+  .h1,
+  .h2,
+  .h4 {
+    color: var(--white);
+    line-height: 1;
+  }
+  
+  .h2 {
+    font-size: var(--fs-2);
+  }
+  
+  .h3 {
+    color: var(--white);
+    font-size: var(--fs-4);
+    line-height: 1.5;
+  }
+  
+  .h4 {
+    font-size: var(--fs-5);
+  }
+  
+  .h2,
+  .h3,
+  .h4 {
+    font-weight: var(--fw-700);
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  .has-before {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .has-before::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+  }
+  
+  .btn {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: max-content;
+    min-width: max-content;
+    padding: 20px 32px;
+  }
+  
+  .btn::before {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: 2px solid var(--white_a5);
+    border-radius: var(--radius-circle);
+    transition: var(--cubic-bounce);
+  }
+  
+  .btn:is(:hover, :focus-visible)::before {
+    left: calc(100% - 70px);
+  }
+  
+  .section-subtitle {
+    text-transform: uppercase;
+    font-size: var(--fs-8);
+    font-weight: var(--fw-700);
+    margin-block-end: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .section-title {
+    margin-block-end: 45px;
+  }
+  
+  .text-lg {
+    font-family: var(--ff-syne);
+    font-size: var(--fs-1);
+  }
+
+  /*-----------------------------------*\
+    #VIDEO SECTION
+  \*-----------------------------------*/
+
+  /* Make the video container take up the full viewport */
+#video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#intro-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire screen */
+}
+
+/*-----------------------------------*\
+    #MAIN SECTION
+  \*-----------------------------------*/
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px; /* Padding for smaller devices */
+}
+
+.h1 {
+  font-size: var(--fs-3);
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.section-text {
+  font-size: var(--fs-6);
+  color: var(--roman-silver);
+}
+
+/* Button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--white_a5);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.btn:hover {
+  background-color: var(--white_a10);
+}
+
+/* Video styles */
+#video-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#intro-video {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+/*-----------------------------------*\
+    #RESPONSIVE STYLES
+\*-----------------------------------*/
+
+/* Smallest devices (up to 320px) */
+@media screen and (max-width: 320px) {
+  .h1 {
+    font-size: var(--fs-5);
+  }
+
+  .section-text {
+    font-size: var(--fs-8);
+  }
+
+  .btn {
+    font-size: var(--fs-8);
+    padding: 10px 16px;
+  }
+
+  #intro-video {
+    height: 100%; /* Allow it to stretch vertically */
+    object-fit: contain; /* Ensure no content is cropped */
+  }
+}
+
+/* Small devices (321px - 480px) */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .h1 {
+    font-size: var(--fs-4);
+  }
+
+  .section-text {
+    font-size: var(--fs-7);
+  }
+
+  .btn {
+    font-size: var(--fs-7);
+    padding: 12px 20px;
+  }
+
+  #intro-video {
+    height: 100%; /* Stretch vertically */
+    object-fit: contain;
+  }
+}
+
+/* Medium devices (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .h1 {
+    font-size: var(--fs-3);
+  }
+
+  .section-text {
+    font-size: var(--fs-6);
+  }
+
+  .btn {
+    font-size: var(--fs-6);
+    padding: 14px 24px;
+  }
+
+  #intro-video {
+    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Large devices (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .h1 {
+    font-size: var(--fs-2);
+  }
+
+  .section-text {
+    font-size: var(--fs-5);
+  }
+
+  .btn {
+    font-size: var(--fs-5);
+    padding: 16px 28px;
+  }
+
+  #intro-video {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Extra large devices (1025px - 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .h1 {
+    font-size: var(--fs-1);
+  }
+
+  .section-text {
+    font-size: var(--fs-4);
+  }
+
+  .btn {
+    font-size: var(--fs-4);
+    padding: 18px 32px;
+  }
+
+  #intro-video {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Beyond 1200px */
+@media screen and (min-width: 1201px) {
+  .h1 {
+    font-size: var(--fs-1);
+  }
+
+  .section-text {
+    font-size: var(--fs-4);
+  }
+
+  .btn {
+    font-size: var(--fs-4);
+    padding: 20px 36px;
+  }
+
+  #intro-video {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}

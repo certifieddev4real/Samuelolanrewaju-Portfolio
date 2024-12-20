@@ -100,6 +100,7 @@ button {
 
 i {
   pointer-events: none;
+  font-size: var(--fs-5);
 }
 
 html {
@@ -205,6 +206,9 @@ body.nav-active {
   max-width: max-content;
   min-width: max-content;
   padding: 20px 32px;
+  background-color: var(--white_a5);
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
 }
 
 .btn::before {
@@ -220,6 +224,7 @@ body.nav-active {
 
 .btn:is(:hover, :focus-visible)::before {
   left: calc(100% - 70px);
+  background-color: var(--white_a10);
 }
 
 .section-subtitle {
