@@ -160,17 +160,13 @@ for (let i = 0, len = sliders.length; i < len; i++) {
 }
 
 /**
-   * SCROLL REVEAL
+   * INTIALIZE AOS
    */
 
-ScrollReveal({ 
-  // reset: true,
-  distance: '80px',
-  duration: 2000,
-  delay: 150
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 1600, // Animation lasts 1 seconds
+    easing: "ease-out-back", // Creates a bouncy effect
+    once: true, // Animation happens only once
+  });
 });
-
-ScrollReveal().reveal('h1', { origin: 'top' });
-ScrollReveal().reveal('.hero-title, .section-text, .section-title, .section-text', { origin: 'bottom' });
-ScrollReveal().reveal('.hero-banner, .btn, .slider, .time, .card-title, .card-text', { origin: 'left' });
-ScrollReveal().reveal('.hero-subtitle, .section-subtitle, .card-banner, .bx-right-arrow-alt', { origin: 'right' });
